@@ -1,0 +1,15 @@
+framework: mocha
+
+postMerge:
+  pattern:
+    - "test/*.spec.ts"
+preMerge:
+  pattern:
+    - "test/*.spec.ts"
+preRun:
+     command:
+        - npm install
+        - npm run tsc-cjs
+
+configFile: "mocha-config/puppeteer-unit-tests.js"
+version: 1.0.0
