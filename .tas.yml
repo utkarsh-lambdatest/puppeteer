@@ -9,7 +9,7 @@ preMerge:
 preRun:
      command:
         - npm install
-        - npm run tsc-cjs
+        - npm run tsc
 
 smartRun: false
 
